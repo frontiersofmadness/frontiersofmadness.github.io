@@ -130,51 +130,6 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
   font-weight: normal;
   font-style: normal;
 }
-@media (max-width: 768px) {
-  	.layout {
-      	flex-direction: column;
-  	}
-  	.layout-left {
-      	width: 70vw !important;
-      	justify-content: unset !important;
-      	align-items: unset !important;
-  	}
-  	.layout-right {
-      	position: static !important;
-      	top: auto !important;
-      	right: auto !important;
-      	width: 100% !important;
-        height: auto !important;
-  	}
-  	.dialog {
-      	height: auto !important;
-      	align-items: flex-start !important;
-  	}
-	.shadow {
-	}
-  	.dialog-left {
-      	display: block !important;
-      	max-height: none !importnat;
-      	height: auto !important;
-      	width: 50% !important;
-      	flex: none !important;
-      	overflow-y: unset !important;
-  	}
-  	.dialog-right {
-      	max-height: none !important;
-      	align-items: center !important;
-  	}
-    #Logo {
-          display: unset !important;
-      	  width: 70vw !important;
-    }
-    #Settings {
-          display: unset !important;
-      	  width: 50vw !important;
-          font-size: initial !important;
-          border: unset !important;
-    }
-}
 
 body {
   background-image: url("images/background.png");
@@ -301,7 +256,23 @@ body {
 .avBox {
   border: 2px solid black;
   padding: 10px 10px 40px 10px;
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.destroy()
+}
+#rotate-warning {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    color: white;
+    z-index: 99999;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript">UIBar.destroy()
 Macro.add("layout", {
     tags: null,
 
@@ -351,7 +322,35 @@ Macro.add("dialog", {
         wrapper.append(left, right);
         this.output.append(wrapper);
   	}
-});</script><tw-tag name="czerw" color="red"></tw-tag><tw-passagedata pid="1" name=". . ." tags="" position="3500,600" size="100,100">&lt;&lt;layout&gt;&gt;
+});
+function checkOrientation() {
+    const isMobile = /Android|iPhone/i.test(navigator.userAgent);
+    if (!isMobile) return;
+
+    let overlay = document.getElementById("rotate-warning");
+
+    if (!overlay) {
+        overlay = document.createElement("div");
+        overlay.id = "rotate-warning";
+        overlay.innerHTML = `
+            <div>
+                <h1>Obróc telefon</h1>
+            </div>
+        `;
+        document.body.appendChild(overlay);
+    }
+
+    if (window.innerHeight > window.innerWidth) {
+        overlay.style.display = "flex";
+    } else {
+        overlay.style.display = "none";
+    }
+}
+
+window.addEventListener("load", checkOrientation);
+window.addEventListener("resize", checkOrientation);
+window.addEventListener("orientationchange", checkOrientation);
+</script><tw-tag name="czerw" color="red"></tw-tag><tw-passagedata pid="1" name=". . ." tags="" position="3500,600" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;&lt;dialog &quot;Jowita_icon&quot;&gt;&gt;
 //No i kolejny...//
 &lt;&lt;/dialog&gt;&gt;
