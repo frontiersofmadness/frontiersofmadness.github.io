@@ -231,7 +231,7 @@ body {
 .shadow {
 		filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.9));
 }
-.shadow .dialog-left {
+.dialog-left {
   	background: white;
   	overflow-y: auto;
   	overflow: visible;
@@ -333,8 +333,7 @@ Macro.add("dialog", {
         const wrapper = document.createElement("div");
         wrapper.className = "dialog";
       	const left = document.createElement("div");
-        left.innerHTML = '<div class="shadow">
-    <div class="dialog-left"></div>';
+        left.innerHTML = '<div class="shadow"><div class="dialog-left"></div></div>';
       
         const right = document.createElement("div");
         right.className = "dialog-right";
