@@ -130,6 +130,50 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
   font-weight: normal;
   font-style: normal;
 }
+@media (max-width: 768px) {
+  	.layout {
+      	flex-direction: column;
+  	}
+  	.layout-left {
+      	width: 70vw !important;
+      	justify-content: unset !important;
+      	align-items: unset !important;
+  	}
+  	.layout-right {
+      	position: static !important;
+      	top: auto !important;
+      	right: auto !important;
+      	width: 100% !important;
+        height: auto !important;
+  	}
+  	.dialog {
+      	height: auto !important;
+      	align-items: flex-start !important;
+  	}
+  	.dialog-left {
+      	display: block !important;
+      	max-height: none !importnat;
+      	height: auto !important;
+      	width: 50% !important;
+      	flex: none !important;
+      	overflow-y: unset !important;
+  	}
+  	.dialog-right {
+      	max-height: none !important;
+      	align-items: center !important;
+  	}
+    #Logo {
+          display: unset !important;
+      	  width: 70vw !important;
+    }
+    #Settings {
+          display: unset !important;
+      	  width: 50vw !important;
+          font-size: initial !important;
+          border: unset !important;
+    }
+}
+
 body {
   background-image: url("images/background.png");
   background-repeat: repeat;
