@@ -336,8 +336,10 @@ Macro.add("dialog", {
         left.innerHTML = '<div class="shadow"><div class="dialog-left"></div></div>';
       
         const right = document.createElement("div");
-        right.className = "dialog-right";
-        right.innerHTML = `<img class="imgs" src="images/${arg}.png">`;
+		const inner_right = document.createElement("div");
+        right.className = "shadow";
+		inner_right.className = "dialog-right"
+		right.appendChild(inner_right);
       	$(left).wiki(this.payload[0].contents)
 
         wrapper.append(left, right);
