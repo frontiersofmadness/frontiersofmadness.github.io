@@ -332,8 +332,8 @@ Macro.add("dialog", {
       	const arg = this.args[0];
         const wrapper = document.createElement("div");
         wrapper.className = "dialog";
-      	const left = document.createElement("div");
-		const inner_left = document.createElement("div");
+      	var left = document.createElement("div");
+		var inner_left = document.createElement("div");
         left.className = "shadow";
 		inner_left.className = "dialog-left";
 		left.appendChild(inner_left);
