@@ -150,7 +150,7 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
       	height: auto !important;
       	align-items: flex-start !important;
   	}
-  	.shadow .dialog-left {
+  	.dialog-left {
       	display: block !important;
       	max-height: none !importnat;
       	height: auto !important;
@@ -333,7 +333,8 @@ Macro.add("dialog", {
         const wrapper = document.createElement("div");
         wrapper.className = "dialog";
       	const left = document.createElement("div");
-        left.className = "dialog-left";
+        left.innerHTML = '<div class="shadow">
+    <div class="dialog-left"></div>';
       
         const right = document.createElement("div");
         right.className = "dialog-right";
