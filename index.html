@@ -623,6 +623,7 @@ To gra paragrafowa, przed wyborem przeczytaj opis uważnie. Wybierając odpowied
 
 &lt;&lt;link &quot;Zaczynamy&quot;&gt;&gt;
     &lt;&lt;set $game.styczen = true&gt;&gt;
+	&lt;&lt;set $game.helena = true&gt;&gt;
     &lt;&lt;goto &quot;Zaczynamy&quot;&gt;&gt;
 &lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
@@ -1552,6 +1553,11 @@ Kajetan Tomaszewski
 &lt;&lt;else&gt;&gt;
 	&lt;div style=&quot;display: flex; align-items: center&quot;&gt;&lt;img class=&quot;i&quot; src=&quot;images/Styczen_icon.png&quot;&gt;&lt;img class=&quot;i&quot; src=&quot;images/styczen_napis.png&quot;&gt;&lt;/div&gt;
 &lt;&lt;/if&gt;&gt;
+&lt;&lt;if $game.helena == false&gt;&gt;
+	&lt;img class=&quot;i&quot; src=&quot;images/Helena_locked.png&quot;&gt;
+&lt;&lt;else&gt;&gt;
+	&lt;div style=&quot;display: flex; align-items: center&quot;&gt;&lt;img class=&quot;i&quot; src=&quot;images/Helena_icon.png&quot;&gt;&lt;img class=&quot;i&quot; src=&quot;images/helena_napis.png&quot;&gt;&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;
 &lt;&lt;if $game.jowita == false&gt;&gt;
 	&lt;img class=&quot;i&quot; src=&quot;images/Jowita_locked.png&quot;&gt;
 &lt;&lt;else&gt;&gt;
@@ -1571,11 +1577,6 @@ Kajetan Tomaszewski
 	&lt;img class=&quot;i&quot; src=&quot;images/Sedziwoj_locked.png&quot;&gt;
 &lt;&lt;else&gt;&gt;
 	&lt;div style=&quot;display: flex; align-items: center&quot;&gt;&lt;img class=&quot;i&quot; src=&quot;images/Sedziwoj_icon.png&quot;&gt;&lt;img class=&quot;i&quot; src=&quot;images/sedziwoj_napis.png&quot;&gt;&lt;/div&gt;
-&lt;&lt;/if&gt;&gt;
-&lt;&lt;if $game.helena == false&gt;&gt;
-	&lt;img class=&quot;i&quot; src=&quot;images/Helena_locked.png&quot;&gt;
-&lt;&lt;else&gt;&gt;
-	&lt;div style=&quot;display: flex; align-items: center&quot;&gt;&lt;img class=&quot;i&quot; src=&quot;images/Helena_icon.png&quot;&gt;&lt;img class=&quot;i&quot; src=&quot;images/helena_napis.png&quot;&gt;&lt;/div&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;back &quot;Powrót&quot;&gt;&gt;
 &lt;/div&gt;</tw-passagedata></tw-storydata>
