@@ -1434,13 +1434,19 @@ Właśnie. Czego szukasz? Po co tu przyszedłeś?
 &lt;div class=&quot;avBox&quot;&gt;
 Twoja ręka samowolnie zmierza w stronę ognia kiedy Albert odwraca wzrok by spojrzeć na gwieździste niebo. Przynajmniej chciałbyś myśleć że to niezależny od ciebie ruch, niebo naprawdę jest pięknę w tę noworoczną noc. Opadające iskry przerywają wam obu swobodne oglądanie gwiazd. Niedługo zapomnisz wyrazu jego twarzy, gdy po raz pierwszy zobaczył kupkę popiołu na podłodze i zwęglony klocek w ręce. Prawda?
 
-[[alfapilog]]
+&lt;&lt;link &quot;alfapilog&quot;&gt;&gt;
+    &lt;&lt;set $game.helena = true&gt;&gt;
+    &lt;&lt;goto &quot;alfapilog&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="oddajesz notatnik" tags="" position="6300,200" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
 Notatnik bez zbędnych uprzejmości przekazujesz Albertowi, przecież to normalna rzecz by oddać przyjacielowi to co jest jego. Bardzo serdecznie dziękuje ci za oddanie jego własności, chociaż i tak pewnie by w nie tak długi czas odtworzył wszystko co ma tam napisane, pomogłeś tylko trochę przyjacielowi.
 
-[[betapilog]]
+&lt;&lt;link &quot;betapilog&quot;&gt;&gt;
+    &lt;&lt;set $game.helena = true&gt;&gt;
+    &lt;&lt;goto &quot;betapilog&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="66" name="przecież to proste (foton)" tags="" position="3500,750" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
@@ -1506,6 +1512,7 @@ Dość automatycznie odpowiadasz pogodnym przywitaniem, dawno nie spotkałeś si
     basia: false,
     czurnke: false,
     sedziwoj: false,
+	helena: false,
     locations: [],
     settings:{
     	textSize: 1,
@@ -1564,6 +1571,11 @@ Kajetan Tomaszewski
 	&lt;img class=&quot;i&quot; src=&quot;images/Sedziwoj_locked.png&quot;&gt;
 &lt;&lt;else&gt;&gt;
 	&lt;div style=&quot;display: flex; align-items: center&quot;&gt;&lt;img class=&quot;i&quot; src=&quot;images/Sedziwoj_icon.png&quot;&gt;&lt;img class=&quot;i&quot; src=&quot;images/sedziwoj_napis.png&quot;&gt;&lt;/div&gt;
+&lt;&lt;/if&gt;&gt;
+&lt;&lt;if $game.helena == false&gt;&gt;
+	&lt;img class=&quot;i&quot; src=&quot;images/Helena_locked.png&quot;&gt;
+&lt;&lt;else&gt;&gt;
+	&lt;div style=&quot;display: flex; align-items: center&quot;&gt;&lt;img class=&quot;i&quot; src=&quot;images/Helena_icon.png&quot;&gt;&lt;img class=&quot;i&quot; src=&quot;images/helena_napis.png&quot;&gt;&lt;/div&gt;
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;back &quot;Powrót&quot;&gt;&gt;
 &lt;/div&gt;</tw-passagedata></tw-storydata>
