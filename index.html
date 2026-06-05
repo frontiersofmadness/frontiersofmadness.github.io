@@ -635,13 +635,15 @@ Kiedy już jesteś na przeciwnym chodniku całe światło przechodzi w trochę m
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="20" name="Odmawiasz" tags="" position="1000,375" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Albert kiwa głową z pewnym rozczarowaniem w oczach. Rozchodzicie się w dobrej atmosferze, ale szybko, bo przyjaciel ma mnóstwo pracy przed Sylwestrem. Oczywiście jesteś zaproszony na spektakl.
+Albert kiwa głową z pewnym rozczarowaniem w oczach. Rozchodzicie się w dobrej atmosferze, ale szybko, bo przyjaciel ma mnóstwo pracy przed Sylwestrem. Oczywiście jesteś &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;zaproszony&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;zaproszona&quot; : &quot;zaproszone&quot; &gt;&gt; na spektakl.
+
 Jeśli przyjdziesz, dowiesz się, że Styczeń nie wrócił na czas i przedstawienie się nie odbędzie. Helena nie będzie chciała z tobą rozmawiać. Po prostu wyjdzie, trzaskając drzwiami.
-Być może mogłeś coś zrobić, czegoś się dowiedzieć. Ale cóż, podjąłeś decyzję.
+
+Być może &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;mogłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;mogłaś&quot; : &quot;mogłoś&quot; &gt;&gt; coś zrobić, czegoś się dowiedzieć. Ale cóż, bezczynność też jest decyzją.
 
 To tyle.
 
-Gratulacje, skończyłeś grę.
+Gratulacje, &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;skończyłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;skończyłaś&quot; : &quot;skończyłoś&quot; &gt;&gt; grę.
 
 ...
 
@@ -663,21 +665,21 @@ Od momentu, w którym otrzymał notatnik, mężczyzna nie odrywa wzroku od przer
 //Tam iść nie radzę, tam straszy//
 &lt;&lt;/dialog&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-słyszysz głos, wyrywający cię z zamyślenia. Rzeczywiście zaczynałeś oddalać się od przewodnika. 
+słyszysz głos, wyrywający cię z zamyślenia. Rzeczywiście &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;zaczynałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;zaczynałaś&quot; : &quot;zaczynałoś&quot; &gt;&gt; oddalać się od przewodnika. 
 &lt;/div&gt;
 &lt;&lt;dialog &quot;Sedziwoj_icon&quot;&gt;&gt;
 //Na historię nie chodzi się samemu.//
 &lt;&lt;/dialog&gt;&gt;
 
 &lt;div class=&quot;avBox&quot;&gt;
-Wracasz zatem, teraz skupiając uwagę to na notatniku, to na mężczyźnie. Widzisz, że podczas lektury wywraca co jakiś czas oczami i że to, co najpierw brałeś za ziewanie, jest tak naprawdę poirytowanymi westchnieniami (a czasem dziwacznym połączeniem obu). Gdy pytasz o to, co to za szyfr, którego używa twój przyjaciel, Sędziwój uśmiecha się i odpowiada, że to po prostu jego koszmarne pismo. Nie jesteś pewien, czy mówi poważnie, ale to by wyjaśniało, dlaczego listy Alberta są pisane na maszynie. Właściwie to skąd on w ogóle wie jak odczytać koszmarne pismo Stycznia?
+Wracasz zatem, teraz skupiając uwagę to na notatniku, to na mężczyźnie. Widzisz, że podczas lektury wywraca co jakiś czas oczami i że to, co najpierw &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;brałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;brałaś&quot; : &quot;brałoś&quot; &gt;&gt; za ziewanie, jest tak naprawdę poirytowanymi westchnieniami (a czasem dziwacznym połączeniem obu). Gdy pytasz o to, co to za szyfr, którego używa twój przyjaciel, Sędziwój uśmiecha się i odpowiada, że to po prostu jego koszmarne pismo. Nie jesteś &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;pewien&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;pewna&quot; : &quot;pewne&quot; &gt;&gt;, czy mówi poważnie, ale to by wyjaśniało, dlaczego listy Alberta są pisane na maszynie. Właściwie to skąd on w ogóle wie jak odczytać koszmarne pismo Stycznia?
 
 [[Pytasz o pismo Alberta]] 
 [[Gabinet Sędziwoja]]
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="22" name="Podchodzicie do Biblioteki" tags="" position="4700,300" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Okazały budynek swoim stylem mocno wyróżnia się wobec tych, które widziałeś wcześniej.  Gładkie ściany z niezrozumiałymi tekstami kontrastują z ruiną otaczających kamienic jak i znacznymi ubytkami w szklanym dachu - teraz na stale przykrytym niebieską plandeką. Jednak bez wątpienia jest lokalnym punktem skupienia wszystkich osób w okolicy. Wszędzie widzisz najróżniejsze postacie próbujące się dostać do ostatniego gmachu wiedzy w mieście, teraz zwanego po prostu &quot;Biblioteką&quot;. 
+Okazały budynek swoim stylem mocno wyróżnia się wobec tych, które &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;widziałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;widziałaś&quot; : &quot;widziałoś&quot; &gt;&gt; wcześniej.  Gładkie ściany z niezrozumiałymi tekstami kontrastują z ruiną otaczających kamienic jak i znacznymi ubytkami w szklanym dachu - teraz na stale przykrytym niebieską plandeką. Jednak bez wątpienia jest lokalnym punktem skupienia wszystkich osób w okolicy. Wszędzie widzisz najróżniejsze postacie próbujące się dostać do ostatniego gmachu wiedzy w mieście, teraz zwanego po prostu &quot;Biblioteką&quot;. 
 
 
 [[Idziesz szukać lokalu]]
@@ -687,9 +689,9 @@ Okazały budynek swoim stylem mocno wyróżnia się wobec tych, które widziałe
 //Czego?//
 &lt;&lt;/dialog&gt;&gt;
 &lt;div class =&quot;avBox&quot;&gt;
-rozlega się pytanie głosem wyrażającym zmęczenie ciągłą pracą. Z bliska widzisz wyraźnie starą, lecz zadbaną i ułożoną skórzaną kurtkę kryjącą twojego rozmówcę. Jeno kieszenie wydają się puste, a przynajmniej nie trzyma w nich niczego co stanowiłoby znaczne obciążenie. Pod kurtką kryje prosty sweter, samym ubiorem nie wyróżnia się spośród zasiedzianych klientów. Oprócz pozycji po drugiej stronie lady wyróżnia jeno tylko jedna rzecz — masa biżuterii z przynajmniej pięcioma odrazu widocznymi kolczykami —wszystkimi złotymi.
+Z bliska widzisz wyraźnie starą, lecz zadbaną i ułożoną skórzaną kurtkę, kryjącą twojego rozmówcę. Jeno kieszenie wydają się puste, a przynajmniej nie trzyma w nich niczego co stanowiłoby znaczne obciążenie. Spod kurtki widać prosty sweter. Samym ubiorem nie wyróżnia się spośród zasiedzianych klientów. Oprócz pozycji po drugiej stronie lady, na pierwszy rzut oka wyróżnia je tylko jedna rzecz — masa biżuterii z przynajmniej pięcioma od razu widocznymi kolczykami — wszystkimi złotymi.
 
-Niepewność w twoim głosie kiedy starasz się upewnić co do tożsamości tej postaci nie pomaga w uzyskaniu uprzejmej odpowiedzi.
+Niepewność w twoim głosie, kiedy starasz się upewnić co do tożsamości tej postaci, nie pomaga w uzyskaniu uprzejmej odpowiedzi.
 &lt;/div&gt;
 
 &lt;&lt;dialog &quot;Jowita_icon&quot;&gt;&gt;
@@ -711,7 +713,7 @@ W środkowym punkcie sali znajduje się długie biurko w kształcie podkowy. Pok
 Po paru słowach z twojej strony, staje się jasne że nie zgodzi się na odddanie pokoju polubownie. Trudno ci go przekonać do zmiany swojej racji.
 -//Jak niby miałbym oddać tak dobrze urządzone laboratorium na jakiś street food and event hall?//
 
-Postanawiasz wyjść i zastanowić się nad aktualną sytuacją, zapowiedź twojego powrotu rzucona w drzwiach chyba nie brzmiała zbyt groźnie. W tym samym momencie mija ciebie inny alchemik który na te słowa spogląda na ciebie podejrzliwie przez chwilę. Dawno nie widziałeś tak bardzo zmęczonej twarzy. Trwa to jednak tylko moment, po czym on szybko odchodzi w głąb korytarza. Podchodzisz do Wilhelma który promienieje gotowością do podania ci rozwiązania problemu z lokalem
+Postanawiasz wyjść i zastanowić się nad aktualną sytuacją, zapowiedź twojego powrotu rzucona w drzwiach chyba nie brzmiała zbyt groźnie. W tym samym momencie mija ciebie inny alchemik który na te słowa spogląda na ciebie podejrzliwie przez chwilę. Dawno nie &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;widziałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;widziałaś&quot; : &quot;widziałoś&quot; &gt;&gt; tak bardzo zmęczonej twarzy. Trwa to jednak tylko moment, po czym on szybko odchodzi w głąb korytarza. Podchodzisz do Wilhelma który promienieje gotowością do podania ci rozwiązania problemu z lokalem
 &lt;/div&gt;
 
 &lt;&lt;dialog &quot;Czurnke_icon&quot;&gt;&gt;
@@ -747,7 +749,7 @@ Wracasz do Barbary, &quot;[[Z chęcią ci pomogę.]]&quot;
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="28" name="Pozwól mu kontynuować" tags="" position="800,300" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;&lt;dialog &quot;Styczen_icon&quot;&gt;&gt;
-//Musisz znaleźć bar o nazwie „Pod Tatrami”. Prawdopodobnie to właśnie osoba, która go prowadzi, będzie mieć notes. Niestety nie wiem, czego dokładnie oczekuje, więc będziesz zdany na siebie. Jeśli się zgodzisz, oczywiście.//
+//Musisz znaleźć bar o nazwie „Pod Tatrami”. Prawdopodobnie to właśnie osoba, która go prowadzi, będzie mieć notes. Niestety nie wiem, czego dokładnie oczekuje, więc będziesz &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;zdany&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;zdana&quot; : &quot;zdane&quot; &gt;&gt; na siebie. Jeśli się zgodzisz, oczywiście.//
 &lt;&lt;/dialog&gt;&gt;
 
 &lt;div class=&quot;avBox&quot;&gt;
@@ -769,7 +771,7 @@ Rozbrzmiewa kurant obecnego za barem zegara.  Udekorowana małym drewnianym soko
 &lt;div class=&quot;avBox&quot;&gt;
 mówi Jowita i odprowadza cię parę kroków do przejścia. Orientujesz się że oświetlenie &quot;Pod Tatrami&quot; teraz idealnie odwzorowuje to co widzisz na zewnątrz, twoje oczy nie potrzebują ani chwili przyzwyczajenia. 
 
-Po pożegnaniu Jowita odchodzi w odwrotną stronę. Gdy przechodzisz przez ulicę, niebo ściemnia się prędzej niż byś się tego spodziewał. Kiedy już jesteś na przeciwnym chodniku wczesny zmrok pozostaje jedynie w pamięci. Gwiazdy zyskują nadzwyczaj ciemne i dostojne tło. Mimo tego to co wciąż dotyka ziemii jest wystarczająco rozświetlone przez uliczne latarnie, które przy pozornej czerni horyzontu wyglądają na o wiele jaśniejsze niż są w rzeczywistości.
+Po pożegnaniu Jowita odchodzi w odwrotną stronę. Gdy przechodzisz przez ulicę, niebo ściemnia się prędzej niż byś się tego &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;spodziewał&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;spodziewała&quot; : &quot;spodziewało&quot; &gt;&gt;. Kiedy już jesteś na przeciwnym chodniku wczesny zmrok pozostaje jedynie w pamięci. Gwiazdy zyskują nadzwyczaj ciemne i dostojne tło. Mimo tego to co wciąż dotyka ziemii jest wystarczająco rozświetlone przez uliczne latarnie, które przy pozornej czerni horyzontu wyglądają na o wiele jaśniejsze niż są w rzeczywistości.
 
 [[Kierujesz się do Komisu]]
 &lt;/div&gt;
@@ -781,7 +783,7 @@ Po pożegnaniu Jowita odchodzi w odwrotną stronę. Gdy przechodzisz przez ulic�
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Pytasz o notatnik" tags="" position="4100,300" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Twoja próba wyrażenia po co tak właściwie tu przyszedłeś zostaje przerwana po dwóch słowach.
+Twoja próba wyrażenia po co tak właściwie tu &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;przyszedłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;przyszłaś&quot; : &quot;przyszłoś&quot; &gt;&gt; zostaje przerwana po dwóch słowach.
 &lt;/div&gt;
 
 &lt;&lt;dialog &quot;Basia_icon&quot;&gt;&gt;
@@ -792,16 +794,16 @@ Twoja próba wyrażenia po co tak właściwie tu przyszedłeś zostaje przerwana
 &lt;&lt;/dialog&gt;&gt;
 
 &lt;div class=&quot;avBox&quot;&gt;
-Dochodzisz do głosu, obecny wcześniej na jej twarzy uśmiech chwilowo zanikł gdy wspomniałeś imię Jowity. Szybko jednak powróciła do wcześniejszej nadwyraz pozytywnej postawy.
+Dochodzisz do głosu, obecny wcześniej na jej twarzy uśmiech chwilowo zanikł gdy &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;wspomniałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;wspomniałaś&quot; : &quot;wspomniałoś&quot; &gt;&gt; imię Jowity. Szybko jednak powróciła do wcześniejszej nadwyraz pozytywnej postawy.
 &lt;/div&gt;
 
 &lt;&lt;dialog &quot;Basia_icon&quot;&gt;&gt;
 //Jowita, ah tak... Ależ oczywiście mamy ten notes dla waszeci! Wszystko jednak swoje kosztuje, zwłaszcza gdy wiąże się z zerwaną umową.//
 &lt;&lt;/dialog&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-ton jej wypowiedzi niespodziewanie spoważniał pod koniec tego zdania. Kątem oka widać że ręką sięga pod ladę, chyba nie jesteś tutaj najbezpieczniejszy. Jednak nie robi nic dalej w tym kierunku.
+ton jej wypowiedzi niespodziewanie spoważniał pod koniec tego zdania. Kątem oka widać że ręką sięga pod ladę, chyba nie jesteś tutaj &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;najbezpieczniejszy&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;najbezpieczniejsza&quot; : &quot;najbezpieczniejsze&quot; &gt;&gt;. Jednak nie robi nic dalej w tym kierunku.
 
-Bez podania ceny ani sprawdzania zawartości własnych kieszeni jesteś świadomy, że nie posiadasz wystarczającej sumy. Kiedy próbujesz to wytłumaczyć, drzwiami za ladą wchodzi młody chłopak i skrycie podaje coś Basi. A raczej próbuje skrycie coś jej podać, bo wychodzi w tym na po prostu podejrzanego. Nie pomaga jego ubiór - odpowiedni dla biednego rzezimieszka na posyłki z wymuszeniem w zestawie. Nie możesz się powstrzymać przed podążaniem za nim wzrokiem.
+Bez podania ceny ani sprawdzania zawartości własnych kieszeni jesteś &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;świadomy&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;świadoma&quot; : &quot;świadome&quot; &gt;&gt;, że nie posiadasz wystarczającej sumy. Kiedy próbujesz to wytłumaczyć, drzwiami za ladą wchodzi młody chłopak i skrycie podaje coś Basi. A raczej próbuje skrycie coś jej podać, bo wychodzi w tym na po prostu podejrzanego. Nie pomaga jego ubiór - odpowiedni dla biednego rzezimieszka na posyłki z wymuszeniem w zestawie. Nie możesz się powstrzymać przed podążaniem za nim wzrokiem.
 &lt;/div&gt;
 
 &lt;&lt;dialog &quot;Basia_icon&quot;&gt;&gt;
@@ -860,7 +862,7 @@ w tym słowie dźwięczy jakaś szczególna nuta, ale trudno wyczytać, co to do
 &lt;&lt;/dialog&gt;&gt;
 
 &lt;div class=&quot;avBox&quot;&gt;
-Odpowiadasz, że może i Albert źle sobie radzi z zapewnianiem pełnego zestawu informacji, ale gdybyś go dobrze wypytał, pewnie powiedziałby ci, w czym rzecz.
+Odpowiadasz, że może i Albert źle sobie radzi z zapewnianiem pełnego zestawu informacji, ale gdybyś go dobrze &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;wypytał&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;wypytała&quot; : &quot;wypytało&quot; &gt;&gt;, pewnie powiedziałby ci, w czym rzecz.
 &lt;/div&gt;
 
 &lt;&lt;dialog &quot;Sedziwoj_icon&quot;&gt;&gt;
@@ -874,7 +876,7 @@ tym razem przez zmęczenie i zjadliwość dość wyraźnie przebija się ból.
 &lt;&lt;/dialog&gt;&gt;
 
 &lt;div class=&quot;avBox&quot;&gt;
-Obaj milczycie przez chwilę po tym monologu. Sędziwój oddycha ciężko: nagły poryw emocji nie pomaga w jego obecnym stanie.
+&lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;Obaj&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;Oboje&quot; : &quot;Oboje&quot; &gt;&gt; milczycie przez chwilę po tym monologu. Sędziwój oddycha ciężko: nagły poryw emocji nie pomaga w jego obecnym stanie.
 &lt;/div&gt;
 
 &lt;&lt;dialog &quot;Sedziwoj_icon&quot;&gt;&gt;
@@ -903,7 +905,7 @@ Twoje pytanie o rozstanie w jakiś sposób przełamuje irytację Jowity, która 
 &lt;&lt;/dialog&gt;&gt;
 
 &lt;div class =&quot;avBox&quot;&gt;
-Trudno ci zauważyć to samo w twoich stosunkach z przyjacielem, może niektóre chwile pasują do tego opisu. Bardziej jesteś zakłopotany nieświadomością tego, że posłał ciebie do ex partnera. Chyba najlepiej wrócić do tematu notatnika.
+Trudno ci zauważyć to samo w twoich stosunkach z przyjacielem, może niektóre chwile pasują do tego opisu. Bardziej jesteś zakłopotan&lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;y&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;a&quot; : &quot;e&quot; &gt;&gt; nieświadomością tego, że posłał ciebie do ex partnera. Chyba najlepiej wrócić do tematu notatnika.
 
 [[Kontynuuj tłumaczenie]]
 &lt;/div&gt;
@@ -936,11 +938,11 @@ Przełożony odpowiada tym tonem wypowiedzi, który zdawało ci się że ustał 
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="37" name="Sam spoglądasz w notatnik" tags="" position="5500,100" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Niby nie powinieneś tego robić, ale ciekawość wszystko uprzedzić chce, odchodzisz więc na chwilę i masz czas samemu jakkolwiek bliżej przyjrzeć się notatnikowi. Jednak po otwarciu następuje rozczarowanie. Wszystkie regularne strony zapełnione są jakiegoś rodzaju muzyczną notacją, dla ciebie jednak jest to jedynie gmatwanina linii i kropek. Może gdybyś chodził na te lekcje muzyki, to byś cokolwiek zrozumiał. Zdaje ci się że jest jakoś dużo głosów? Między tymi zapiskami zauważasz włożone luźno kartki, zapisane już chyba słowami na lepszym papierze niż trzymający je tani brulion. Odczytanie ich nie jest łatwiejsze, ponieważ nie potrafisz rozróżnić liter tego pisma. Może to inny język, jak te na ścianie Biblioteki? Albo jakiś szyfr?
+Niby nie &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;powinieneś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;powininnaś&quot; : &quot;powininnoś&quot; &gt;&gt; tego robić, ale ciekawość wszystko uprzedzić chce, odchodzisz więc na chwilę i masz czas samemu jakkolwiek bliżej przyjrzeć się notatnikowi. Jednak po otwarciu następuje rozczarowanie. Wszystkie regularne strony zapełnione są jakiegoś rodzaju muzyczną notacją, dla ciebie jednak jest to jedynie gmatwanina linii i kropek. Może gdybyś &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;chodził&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;chodziła&quot; : &quot;chodziło&quot; &gt;&gt; na te lekcje muzyki, to byś cokolwiek &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;zrozumiał&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;zrozumiała&quot; : &quot;zrozumiało&quot; &gt;&gt;. Zdaje ci się że jest jakoś dużo głosów? Między tymi zapiskami zauważasz włożone luźno kartki, zapisane już chyba słowami na lepszym papierze niż trzymający je tani brulion. Odczytanie ich nie jest łatwiejsze, ponieważ nie potrafisz rozróżnić liter tego pisma. Może to inny język, jak te na ścianie Biblioteki? Albo jakiś szyfr?
 
 Jednak najbardziej zaczyna cię interesować jedno: czemu właściwie to było aż tak potrzebne Sędziwojowi? Trudno powiedzieć czy zleciłby kradzież takiej błahostki jedynie z powodu ich poróżnienia w nauce (bo chyba tak o tym mówił Albert). Może widzi w tych notatkach coś więcej, bo chyba nie zrobił tego z czystej złośliwości. Tym bardziej, że przyjaciel miał dużo dobrego do powiedzenia na jego temat.
 
-Dopiero go minąłeś, więc możesz pewnie zapytać, choć prawdopodobnie Styczeń powie ci to samo.
+Dopiero go &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;minąłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;minęłaś&quot; : &quot;minęłoś&quot; &gt;&gt;, więc możesz pewnie zapytać, choć prawdopodobnie Styczeń powie ci to samo.
 
 [[Ruszasz do Stycznia]] 
 
@@ -952,7 +954,7 @@ Przypominasz sobie szkolne łamigłówki, którymi z kolegami umilaliście sobie
 
 —//Przecież to proste!// — czy syk uchodzącego powietrza oznacza, że twoja zagadka była obraźliwie prosta? — //Cały tor!//
 
-Nie dasz rady wygrać, jeśli będziecie się tak dalej przerzucać. Prędzej czy później się potkniesz, a już teraz miałeś problem z wymyśleniem zagadki. Ale może jednak jeszcze nie musisz myśleć nad kolejną. Przecież cały dowcip polega na tym, że rozwiązania są dwa, a to pierwsze, które przychodzi na myśl uznaje się za błędne.
+Nie dasz rady wygrać, jeśli będziecie się tak dalej przerzucać. Prędzej czy później się potkniesz, a już teraz &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;miałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;miałaś&quot; : &quot;miałoś&quot; &gt;&gt; problem z wymyśleniem zagadki. Ale może jednak jeszcze nie musisz myśleć nad kolejną. Przecież cały dowcip polega na tym, że rozwiązania są dwa, a to pierwsze, które przychodzi na myśl uznaje się za błędne.
 
 Odpowiadasz, że &quot;cały tor&quot; to tylko pół odpowiedzi, bo jednocześnie półtora i półtora daje trzy.
 
@@ -993,7 +995,7 @@ Chyba zauważa że nie podzielasz jej oburzenia na temat tej osoby.
 &lt;&lt;/dialog&gt;&gt;
 
 &lt;div class=&quot;avBox&quot;&gt;
-Lekko uśmiechasz się pod nosem, ale wiesz że niczego więcej się nie dowiesz. Również Basia stara się wzrokiem powiedzieć żebyś już się zbierał do Biblioteki, pora iść. 
+Lekko uśmiechasz się pod nosem, ale wiesz że niczego więcej się nie dowiesz. Również Basia stara się wzrokiem powiedzieć żebyś już się &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;zbierał&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;zbierała&quot; : &quot;zbierało&quot; &gt;&gt; do Biblioteki, pora iść. 
 
 [[Ruszaj z Wilhelmem w stronę Biblioteki]]
 &lt;/div&gt;
