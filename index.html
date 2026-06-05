@@ -1527,6 +1527,12 @@ Zaimki
 &lt;&lt;radiobutton &quot;$game.settings.pronouns&quot; &quot;he&quot; checked&gt;&gt; On/jego
 &lt;&lt;radiobutton &quot;$game.settings.pronouns&quot; &quot;she&quot;&gt;&gt; Ona/jej
 &lt;&lt;radiobutton &quot;$game.settings.pronouns&quot; &quot;they&quot;&gt;&gt; Ono/jego
+&lt;button onclick=&quot;
+	SugarCube.State.metadata.set(&#39;pronouns&#39;, SugarCube.State.variables.game.settings.pronouns);
+	alert(&#39;Zaimki zapisane!&#39;);
+	&quot;&gt;
+	Zapisz wybór
+&lt;/button&gt;
 &lt;/div&gt;
 &lt;div class=&quot;avBlox&quot;&gt;
 &lt;button onclick=&quot;SugarCube.Engine.restart();&quot;&gt;
