@@ -590,7 +590,9 @@ Mówisz, że masz sprawę do osoby posiadającej bar. Rozmówca chyba się uśmi
 
 — //A, Jowita!. Luwię je. Owy szię wam udało dogadać. Mogę cię zaprowadzić.//
 
-[[Poproś o wskazówki i idź sam]] 
+&lt;&lt;link `(State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;Poproś o wskazówki i idź sam&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;Poproś o wskazówki i idź sama&quot; : &quot;Poproś o wskazówki i idź same&quot;)`&gt;&gt;
+    &lt;&lt;goto &quot;Poproś o wskazówki i idź sam&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
 
 [[Idź z nim]]
 &lt;/div&gt;
@@ -1035,7 +1037,9 @@ Postanawiasz, że najbezpieczniej będzie do niego podejść od tyłu. Przechodz
 
 Szybkim ruchem wyjmujesz notatnik z leżącej obok niego torby. Kątem oka łapiesz również resztę zawartości — noże, rylce, dwa grube pojemniki z płynami i okrągły metalowy przedmiot kryjący się w głębi. Szybkim i jak najcichszym ruchem starasz się uciec dalej od niego. Kryjesz się w pierwszym lepszym korytarzu.
 
-[[Sam spoglądasz w notatnik]] 
+&lt;&lt;link `(State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;Sam spoglądasz w notatnik&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;Sama spoglądasz w notatnik&quot; : &quot;Same spoglądasz w notatnik&quot;)`&gt;&gt;
+    &lt;&lt;goto &quot;Sam spoglądasz w notatnik&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
 
 [[Ruszasz do Stycznia]]
 &lt;/div&gt;
@@ -1146,7 +1150,9 @@ Postanawiasz więc coś zrobić.
 
 Kiedy jego stanowisko składa się w większości z kupy rozbitego szkła zawieszonego w brunatnej kałuży, łatwiej jest ci go przekonać — po prostu się poddaje. Kiedy wychodzi, rzuca pod nosem: — //Niech tylko dostanę Michała w zasięgu ręki, to go uduszę.// — Właśnie! tobie też przydałoby się złapać z Sędziwojem. Pewnie może powiedzieć ci więcej na temat tych zapisków, które są powodem całego zamieszania. Kiedy je odbierasz, Wilhelm kiwa głową z uznaniem. Twój bagaż właśnie stał się cięższy o paręset zapełnionych stron w taniej tekturowej oprawie.
 
-[[Sam spoglądasz w notatnik]] 
+&lt;&lt;link `(State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;Sam spoglądasz w notatnik&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;Sama spoglądasz w notatnik&quot; : &quot;Same spoglądasz w notatnik&quot;)`&gt;&gt;
+    &lt;&lt;goto &quot;Sam spoglądasz w notatnik&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
 
 [[Ruszasz do Stycznia]]
 &lt;/div&gt;
@@ -1435,7 +1441,9 @@ Właśnie. Czego szukasz? Po co tu &lt;&lt;= State.metadata.get(&quot;pronouns&q
 
 [[Szukasz notatnika]] 
 
-[[przyszedłeś obudzić śniącego]]
+&lt;&lt;link `(State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;przyszedłeś obudzić śniącego&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;przyszłaś obudzić śniącego&quot; : &quot;przyszłoś obudzić śniącego&quot;)`&gt;&gt;
+    &lt;&lt;goto &quot;przyszedłeś obudzić śniącego&quot;&gt;&gt;
+&lt;&lt;/link&gt;&gt;
 
 [[coś tam… dla zabawy?]]
 &lt;/div&gt;
