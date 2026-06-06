@@ -323,6 +323,9 @@ Macro.add("dialog", {
         this.output.append(wrapper);
   	}
 });
+if (!SugarCube.State.metadata.has('pronouns')) {
+	SugarCube.State.metadata.set('pronouns', 'he');
+}
 function checkOrientation() {
     const isMobile = /Android|iPhone/i.test(navigator.userAgent);
     if (!isMobile) return;
@@ -1003,7 +1006,7 @@ Lekko uśmiechasz się pod nosem, ale wiesz, że niczego więcej się nie dowies
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="Spróbuj odnaleźć Sędziwoja" tags="" position="5125,450" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Podążając w stronę, w którą udał się naukowiec, mijasz wejście do głównej części Biblioteki. Wielka zielona księga odcina się na ciemnym tle wnętrza po twojej prawej stronie. Idąc dalej, bez problemu znajdujesz w mroku naprzeciwko niewielką przestrzeń, wytyczoną pochodzącym ze świecy blaskiem. Sędziwój siedzi na podłodze i nerwowo przekłada karty inkunabułu, pijąc coś, co najprawdopodobniej służy powstrzymaniu się od zaśnięcia. Słyszałeś, że kiedyś napój zwany kawą był bardzo powszechnym środkiem ku temu. Z bliska nawet lepiej widzisz kompletne zmęczenie, obecne również w ruchach alchemika. Na pewno dawno nie spał. Skupiony na znalezieniu pożądanych informacji, nawet nie podnosi na ciebie wzroku.
+Podążając w stronę, w którą udał się naukowiec, mijasz wejście do głównej części Biblioteki. Wielka zielona księga odcina się na ciemnym tle wnętrza po twojej prawej stronie. Idąc dalej, bez problemu znajdujesz w mroku naprzeciwko niewielką przestrzeń, wytyczoną pochodzącym ze świecy blaskiem. Sędziwój siedzi na podłodze i nerwowo przekłada karty inkunabułu, pijąc coś, co najprawdopodobniej służy powstrzymaniu się od zaśnięcia. &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;Słyszałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;Słyszałaś&quot; : &quot;Słyszałoś&quot; &gt;&gt;, że kiedyś napój zwany kawą był bardzo powszechnym środkiem ku temu. Z bliska nawet lepiej widzisz kompletne zmęczenie, obecne również w ruchach alchemika. Na pewno dawno nie spał. Skupiony na znalezieniu pożądanych informacji, nawet nie podnosi na ciebie wzroku.
 
 Kiedy zaczynasz mówić, pośpiesznie zamyka księgę, niczym dziecko przyłapane na gorącym uczynku. Dalej słucha cię uważnie. Chyba jednak wynika to głównie z tego, że inaczej nie zrozumiałby nic z tego co mówisz.
 &lt;/div&gt;
@@ -1062,7 +1065,7 @@ Pyta z pewnym zażenowaniem.
 &lt;div class=&quot;avBox&quot;&gt;
 — Nie mam… Gdzie?
 
-Niesprecyzowany, przypominający upadające metalowe naczynie ton w tym koszmarnie nieprzyjemnym głosie to ostatnie, co słyszysz, zanim coś zrzuca cię z liny. W momencie, w którym zaczynasz spadać, orientujesz się, że ciągle byłeś pod drzwiami. Ale… Czy tobie ktoś nie towarzyszył?
+Niesprecyzowany, przypominający upadające metalowe naczynie ton w tym koszmarnie nieprzyjemnym głosie to ostatnie, co słyszysz, zanim coś zrzuca cię z liny. W momencie, w którym zaczynasz spadać, orientujesz się, że ciągle &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;byłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;byłaś&quot; : &quot;byłoś&quot; &gt;&gt; pod drzwiami. Ale… Czy tobie ktoś nie towarzyszył?
 
 [[. . .]]
 &lt;/div&gt;
@@ -1098,7 +1101,7 @@ Po chwili milczenia odwraca wzrok; widzisz, że naprawdę chce ci dać wolny wyb
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="Wracasz do Jowity" tags="" position="2900,700" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Wracasz do Jowity. Lokal jest teraz bardziej zapełniony niż wcześniej. Mimo kompletnego zajęcia wszystkich stolików w sali, dalej nikt nie przekracza wytyczonej granicy. Od góry dochodzi cię dudniący dźwięk; chyba był obecny wcześniej, ale teraz jest jeszcze bardziej dosadny. Kiedy podchodzisz do baru, Jowita już się domyśla, dlaczego tu przyszedłeś i chyba dlatego jest milsze niż wcześniej.
+Wracasz do Jowity. Lokal jest teraz bardziej zapełniony niż wcześniej. Mimo kompletnego zajęcia wszystkich stolików w sali, dalej nikt nie przekracza wytyczonej granicy. Od góry dochodzi cię dudniący dźwięk; chyba był obecny wcześniej, ale teraz jest jeszcze bardziej dosadny. Kiedy podchodzisz do baru, Jowita już się domyśla, dlaczego tu &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;przyszedłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;przyszłaś&quot; : &quot;przyszłoś&quot; &gt;&gt; i chyba dlatego jest milsze niż wcześniej.
 &lt;/div&gt;
 
 &lt;&lt;dialog &quot;Jowita_icon&quot;&gt;&gt;
@@ -1112,9 +1115,9 @@ Oczywiście się zgadzasz. To nie tak, że masz coś lepszego do roboty.
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="48" name="Wracasz do Pod Tatrami i próbujesz wywołać zamieszki" tags="" position="3075,75" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Lokal zastajesz w takim samym stanie, w jakim go opuściłeś, ale teraz nawet bardziej uderza cię różnica między ciemnią szynku a oświetlonym dworem, z którego właśnie wróciłeś.
+Lokal zastajesz w takim samym stanie, w jakim go &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;opuściłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;opuściłaś&quot; : &quot;opuściłoś&quot; &gt;&gt;, ale teraz nawet bardziej uderza cię różnica między ciemnią szynku a oświetlonym dworem, z którego właśnie &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;wróciłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;wróciłaś&quot; : &quot;wróciłoś&quot; &gt;&gt;.
 
-Próbujesz znaleźć punkt zaczepienia dla twojej próby — bardziej otwarcie wyglądają wilczy klienci Jowity. Przechodząc wzrokiem między jeszcze nie w pełni ludzkimi twarzami znajdujesz w nich pewną wewnętrzną i nieoczywistą życzliwość. Wśród nich od razu skupiasz się na jednej: nie jest największą duszą towarzystwa, ale zdaje się być tym, który byłby najbardziej otwarty na rozmowę z obcym. Dopiero po chwili zauważasz, że to ten sam wilkołak, którego wcześniej pytałeś o drogę. 
+Próbujesz znaleźć punkt zaczepienia dla twojej próby — bardziej otwarcie wyglądają wilczy klienci Jowity. Przechodząc wzrokiem między jeszcze nie w pełni ludzkimi twarzami znajdujesz w nich pewną wewnętrzną i nieoczywistą życzliwość. Wśród nich od razu skupiasz się na jednej: nie jest największą duszą towarzystwa, ale zdaje się być tym, który byłby najbardziej otwarty na rozmowę z obcym. Dopiero po chwili zauważasz, że to ten sam wilkołak, którego wcześniej &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;pytałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;pytałaś&quot; : &quot;pytałoś&quot; &gt;&gt; o drogę. 
 
 &lt;&lt;if $game.gintarek == false&gt;&gt;
 &lt;&lt;link &quot;Zaakceptuj zagrożenie i idź do baru&quot;&gt;&gt;
@@ -1149,15 +1152,15 @@ Kiedy jego stanowisko składa się w większości z kupy rozbitego szkła zawies
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="50" name="Wychodzisz z Teatru" tags="" position="1200,300" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Plac Teatralny, choć spowity w chaosie, ma swój urok. Twoim oczom po wyjściu ukazują się niemożliwe architektonicznie budynki, których części są całkiem dosłownie zawieszone w powietrzu. Po pomarańczowożółtym niebie, jakby poprzetykanym fioletowymi nitkami (lub pękniętym i sklejonym w ten sposób), przemykają nie tylko ptaki, ale również coś, co wygląda z tej odległości na latawce. Kwiaty i krzewy zdają się tańczyć w rytm jakiejś nieznanej ci melodii. Jedno z drzew — to największe w okolicy — ciągle rośnie, na twoich oczach. Na różnych jego wysokościach pozawieszane są mieniące się w słońcu lusterka i inne ozdoby. Przemierzając tę część miasta nigdy nie jesteś pewien, czy to się dzieje naprawdę.
+Plac Teatralny, choć spowity w chaosie, ma swój urok. Twoim oczom po wyjściu ukazują się niemożliwe architektonicznie budynki, których części są całkiem dosłownie zawieszone w powietrzu. Po pomarańczowożółtym niebie, jakby poprzetykanym fioletowymi nitkami (lub pękniętym i sklejonym w ten sposób), przemykają nie tylko ptaki, ale również coś, co wygląda z tej odległości na latawce. Kwiaty i krzewy zdają się tańczyć w rytm jakiejś nieznanej ci melodii. Jedno z drzew — to największe w okolicy — ciągle rośnie, na twoich oczach. Na różnych jego wysokościach pozawieszane są mieniące się w słońcu lusterka i inne ozdoby. Przemierzając tę część miasta nigdy nie jesteś &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;pewny&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;pewna&quot; : &quot;pewne&quot; &gt;&gt;, czy to się dzieje naprawdę.
 
 Względnie szybko docierasz na Trębacką, do granicy między placem Teatralnym a Krakowskim Przedmieściem. Wygląda niepozornie, jak na miejsce, w którym można czynić cuda lub przepaść na zawsze, jeśli nieostrożnie postawi się następny krok. W zasadzie dałoby się ją przeoczyć, gdyby nie zwrócić uwagi na dziwnie ujednoliconą i jeszcze bardziej bezsensowną naturę budynków dalej. Trochę tak, jakby umysł zapełniał lukę pasującym do otoczenia, ale jednak nieprzemyślanym tłem.
 
 Po drodze mijasz kobietę, skuloną na schodach smutno pochylonej nad nią kamienicy. Kobieta praktycznie się nie rusza, jej twarz zasłaniają włosy. Obok leżą skrzypce. Nietrudno się domyślić, czemu tu siedzi i czemu jest załamana: wielu ludzi straciło bliskich w przetrzeni liminalnej. To częsty rodzaj wypadków, choć od najmłodszych lat tłumaczy się dzieciom w szkole i poza nią, żeby uważać na granice.
 
-Idziesz dalej. Przygotowujesz się do przejścia: łamiesz gałązkę, układasz jej części na drodze przed sobą. Jak zawsze podczas rytuałów jesteś lekko zestresowany. Bierzesz w dłoń pochodzącą z Krakowskiego Przedmieścia klamkę. Przechodzisz między częściami gałązki, a stawiając następny krok unosisz klamkę do ust i wymawiasz formułę „wracamy bezpiecznie tam, skąd pochodzisz”. Na koniec stukasz klamką o podłoże.
+Idziesz dalej. Przygotowujesz się do przejścia: łamiesz gałązkę, układasz jej części na drodze przed sobą. Jak zawsze podczas rytuałów jesteś lekko &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;zestresowany&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;zestresowana&quot; : &quot;zestresowane&quot; &gt;&gt;. Bierzesz w dłoń pochodzącą z Krakowskiego Przedmieścia klamkę. Przechodzisz między częściami gałązki, a stawiając następny krok unosisz klamkę do ust i wymawiasz formułę „wracamy bezpiecznie tam, skąd pochodzisz”. Na koniec stukasz klamką o podłoże.
 
-Nie ma jasno wyczuwalnego momentu zmiany, ale gdy rozglądasz się po zakończeniu rytuału, jesteś na Krakowskim Przedmieściu — podobno najbardziej ze wszystkich części Warszawy odzwierciedlającym świat ubiegłego tysiąclecia. Zauważasz, że przestałeś słyszeć melodię, która wypełnia plac Teatralny. Nie jesteś pewien, czy potrafiłbyś ją choćby rozpoznać teraz, gdy już nie masz z nią kontaktu. Budynki są znacznie bardziej regularne niż tam, skąd przychodzisz. Poza tym, zachował się tu rytm pór roku, co tym razem oznacza, że pada śnieg i mimo użyczonej przez przyjaciela kurtki ogarnia cię chłód. Oby „Pod Tatrami” znajdowało się w pobliżu…
+Nie ma jasno wyczuwalnego momentu zmiany, ale gdy rozglądasz się po zakończeniu rytuału, jesteś na Krakowskim Przedmieściu — podobno najbardziej ze wszystkich części Warszawy odzwierciedlającym świat ubiegłego tysiąclecia. Zauważasz, że &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;przestałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;przestałaś&quot; : &quot;przestałoś&quot; &gt;&gt; słyszeć melodię, która wypełnia plac Teatralny. Nie jesteś &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;pewny&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;pewna&quot; : &quot;pewne&quot; &gt;&gt;, czy &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;potrafiłbyś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;potrafiłabyś&quot; : &quot;potrafiłobyś&quot; &gt;&gt; ją choćby rozpoznać teraz, gdy już nie masz z nią kontaktu. Budynki są znacznie bardziej regularne niż tam, skąd przychodzisz. Poza tym, zachował się tu rytm pór roku, co tym razem oznacza, że pada śnieg i mimo użyczonej przez przyjaciela kurtki ogarnia cię chłód. Oby „Pod Tatrami” znajdowało się w pobliżu…
 
 [[Krakowskie Przedmieście]]
 &lt;/div&gt;
@@ -1165,7 +1168,7 @@ Nie ma jasno wyczuwalnego momentu zmiany, ale gdy rozglądasz się po zakończen
 &lt;div class =&quot;avBox&quot;&gt;
 Przerwa na świeże powietrze zawsze pomaga wolnej myśli, jednak ta sytuacja wydaje się raczej bez wyjścia. Próba przejścia granicy bez zmiękczenia tej drogi jest z góry skazana na porażkę — i to dość tragiczną. 
 
-Wspominasz dualizm piwnicznego szynku: teraz jest to dla ciebie kompletnie jasne, że po jednej stronie siedzieli wilczy mieszkańcy Krakowskiego Przedmieścia, a po drugiej stronie Wampiry z przecznicy. Ciekawe, ilu by wyszło rannych z przejścia któregoś przez linię dzielącą warszawskie tatry Jowity. Niby budynek posiada wampirzy adres, ale jednak znajduje się po północnej stronie tego podziału. Może to jest właśnie jakiś pomysł? Mimo wszystko, to bardzo ryzykowne podejście. Nie jesteś pewien, ale chyba z wykorzystywania napięć między dwoma grupami historycznie raczej działy się rzeczy zapisane w tej czarnej części podręcznika.
+Wspominasz dualizm piwnicznego szynku: teraz jest to dla ciebie kompletnie jasne, że po jednej stronie siedzieli wilczy mieszkańcy Krakowskiego Przedmieścia, a po drugiej stronie Wampiry z przecznicy. Ciekawe, ilu by wyszło rannych z przejścia któregoś przez linię dzielącą warszawskie tatry Jowity. Niby budynek posiada wampirzy adres, ale jednak znajduje się po północnej stronie tego podziału. Może to jest właśnie jakiś pomysł? Mimo wszystko, to bardzo ryzykowne podejście. Nie jesteś &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;pewien&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;pewna&quot; : &quot;pewne&quot; &gt;&gt;, ale chyba z wykorzystywania napięć między dwoma grupami historycznie raczej działy się rzeczy zapisane w tej czarnej części podręcznika.
 
 Z tyłu twojej głowy dalej siedzi nieprzyjemna świadomość upływającego czasu. Co prawda spektakl odbywa się dopiero jutro i to późno, ale nie podoba ci się to przedłużenie twojej podróży.
 
@@ -1189,7 +1192,7 @@ Basia nie próbuje ukryć rozczarowania brakiem zapłaty za dobrze wykonaną kra
 &lt;&lt;/dialog&gt;&gt;
 
 &lt;div class=&quot;avBox&quot;&gt;
-Wiedziony nieufnością próbujesz wynegocjować uzyskanie swojej części przed wykonaniem zadania, zanim jednak skończysz wymawiać ostatnie słowo, jej ręka znowu sięga pod ladę. 
+&lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;Wiedziony&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;Wiedziona&quot; : &quot;Wiedzione&quot; &gt;&gt; nieufnością próbujesz wynegocjować uzyskanie swojej części przed wykonaniem zadania, zanim jednak skończysz wymawiać ostatnie słowo, jej ręka znowu sięga pod ladę. 
 &lt;/div&gt;
 
 &lt;&lt;dialog &quot;Basia_icon&quot;&gt;&gt;
@@ -1215,13 +1218,13 @@ Młody złodziej zgodził się milcząco.
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="Zaakceptuj zagrożenie i idź do baru (jeśli nie znasz imienia gintora)" tags="" position="3300,200" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Kiedy po cichu przysiadasz się do poznanego wcześniej Wilkołaka, nie spotykasz się przyjemnym powitaniem którego się spodziewałeś. Pewnie za złe ma ci twoją wcześniejszą małomówność.
+Kiedy po cichu przysiadasz się do poznanego wcześniej Wilkołaka, nie spotykasz się przyjemnym powitaniem którego się &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;spodziewałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;spodziewałaś&quot; : &quot;spodziewałoś&quot; &gt;&gt;. Pewnie za złe ma ci twoją wcześniejszą małomówność.
 
 Jego kompani również nie darzą cię większą sympatią. Kiedy zauważają oschłą postawę wobec ciebie twojego dawnego rozmówcy, na ich twarzach maluje się pewne zaniepokojenie. Może szok? Z pewnością przynajmniej obrzydzenie i odraza spotyka cię w ich wzroku. Widzisz, że są po przynajmniej trzech kolejkach. Może chociaż to ułatwi zadanie?
 
 Mimo chłodnego początku rozmowy postanawiasz brnąć dalej. Szeptana konspiracja w stylu konfidenckiego prowokatora skutkuje jedynie zdziwionym spojrzeniem, postanawiasz więc przejść do bardziej dotkliwych środków. 
 
-Kto by się spodziewał, że krzyczenie na cały lokal tego samego, co przed chwilą w wąskim gronie spotkało się z cichą odmową, nie jest najlepszym pomysłem? Tym razem oprócz cichego szoku od strony po której siedzisz, widzisz również jawną wrogość przeciwnego wam grona. Wilkołaki chyba zdają sobie sprawę z tego, że szybko może się to przerodzić w większy konflikt. Profilaktycznie zostajesz wyrzucony za drzwi. W trakcie drogi na zewnątrz widzisz twarz Jowity, chyba jedynie w twoich urojeniach jest tam element zrozumienia dla twojej decyzji.
+Kto by się spodziewał, że krzyczenie na cały lokal tego samego, co przed chwilą w wąskim gronie spotkało się z cichą odmową, nie jest najlepszym pomysłem? Tym razem oprócz cichego szoku od strony po której siedzisz, widzisz również jawną wrogość przeciwnego wam grona. Wilkołaki chyba zdają sobie sprawę z tego, że szybko może się to przerodzić w większy konflikt. Profilaktycznie zostajesz &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;wyrzucony&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;wyrzucona&quot; : &quot;wyrzucone&quot; &gt;&gt; za drzwi. W trakcie drogi na zewnątrz widzisz twarz Jowity, chyba jedynie w twoich urojeniach jest tam element zrozumienia dla twojej decyzji.
 
 Resztę dnia spędzasz czekając na zmrok między kolumnami Pałacu Staszica. Pomnik człowieka stanowi ładny widok, ale niesie się od niego niemiły odór. Dopiero gdy widzisz, że &quot;Pod tatrami&quot; się bardziej opróżnia, decydujesz się wrócić. Resztę czasu spędzasz samotnie, siedząc przy barze.
 
@@ -1309,9 +1312,9 @@ Jak na Alberta Antoniego Stycznia, jest to niezwykle wylewna odpowiedź.
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="58" name="Zbierasz się do powrotu 2" tags="" position="5500,475" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Alchemik staje na twojej drodze, gdy zauważa, że kierujesz się do wyjścia. Wygląda, jakby miał się zaraz rozsypać, runąć na ziemię jak szmaciana lalka; ale jego oczy wciąż płoną determinacją, którą dopiero co słyszałeś w jego słowach.
+Alchemik staje na twojej drodze, gdy zauważa, że kierujesz się do wyjścia. Wygląda, jakby miał się zaraz rozsypać, runąć na ziemię jak szmaciana lalka; ale jego oczy wciąż płoną determinacją, którą dopiero co &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;słyszałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;słyszałaś&quot; : &quot;słyszałoś&quot; &gt;&gt; w jego słowach.
 
-Trwa to jednak tylko chwilę. Tak jak w momencie opuszczenia placu Teatralnego, uświadamiasz sobie nieobecność czegoś, czego doświadczałeś dotychczas: w tych oczach nie ma już nadziei.
+Trwa to jednak tylko chwilę. Tak jak w momencie opuszczenia placu Teatralnego, uświadamiasz sobie nieobecność czegoś, czego &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;doświadczałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;doświadczałaś&quot; : &quot;doświadczałoś&quot; &gt;&gt; dotychczas: w tych oczach nie ma już nadziei.
 
 Michał Sędziwój wygląda, jakby chciał coś jeszcze powiedzieć, gdy go mijasz, ale, koniec końców, nic nie słyszysz.
 
@@ -1319,15 +1322,15 @@ Michał Sędziwój wygląda, jakby chciał coś jeszcze powiedzieć, gdy go mija
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Zgadzasz się" tags="" position="1000,225" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Styczeń, dziękując, że postanowiłeś pomóc, wręcza ci urwaną klamkę, której będziesz potrzebować przekraczając granicę. Dostajesz też kurtkę, której do tego momentu nie potrzebowałeś, z uwagi na warunki w twojej części miasta i na placu teatralnym. Zamieniacie jeszcze parę zdań, zanim wyruszysz. Niewiele, bo Albert musi wrócić do pracy, a ty musisz wrócić z notatnikiem przed występem. W końcu żegnacie się i opuszczasz teatr.
+Styczeń, dziękując, że &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;postanowiłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;postanowiłaś&quot; : &quot;postanowiłoś&quot; &gt;&gt; pomóc, wręcza ci urwaną klamkę, której będziesz potrzebować przekraczając granicę. Dostajesz też kurtkę, której do tego momentu nie &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;potrzebowałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;potrzebowałaś&quot; : &quot;potrzebowałoś&quot; &gt;&gt;, z uwagi na warunki w twojej części miasta i na placu teatralnym. Zamieniacie jeszcze parę zdań, zanim wyruszysz. Niewiele, bo Albert musi wrócić do pracy, a ty musisz wrócić z notatnikiem przed występem. W końcu żegnacie się i opuszczasz teatr.
 
 [[Wychodzisz z Teatru]]
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="60" name="alfapilog" tags="" position="6500,400" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Pusta scena i równie pusta widownia stanowią tło dla waszej rozmowy. Siedzicie sobie na skraju sceny, jak to już wielokrotnie robiliście. Nie jesteś pewien, czy w związku z twoim wyborem to nie będzie ostatni raz. Ale tak działa świat. Decyzje mają konsekwencje.
+Pusta scena i równie pusta widownia stanowią tło dla waszej rozmowy. Siedzicie sobie na skraju sceny, jak to już wielokrotnie robiliście. Nie jesteś &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;pewny&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;pewna&quot; : &quot;pewne&quot; &gt;&gt;, czy w związku z twoim wyborem to nie będzie ostatni raz. Ale tak działa świat. Decyzje mają konsekwencje.
 
-Jedna z takich konsekwencji objawiła się pół godziny temu pogardliwym spojrzeniem i trzaskającymi drzwiami, gdy Albert powiedział Helenie o notatniku. Wrócił od niej dopiero niedawno, ale wnioskując z jego miny i postury, raczej za dużo nie porozmawiali. Dziewczynie zdarzało się stawać niepowstrzymaną siłą natury w sprawach tak błahych, że trudno ci to przełożyć na skalę losów świata. Na razie wiesz tyle, że zostałeś wliczony w poczet „hipokrytów z Biblioteki, którzy niczym, z wyjątkiem obłudy, nie różnią się od osłów z kampusu na Krakowskim Przedmieściu&quot;.
+Jedna z takich konsekwencji objawiła się pół godziny temu pogardliwym spojrzeniem i trzaskającymi drzwiami, gdy Albert powiedział Helenie o notatniku. Wrócił od niej dopiero niedawno, ale wnioskując z jego miny i postury, raczej za dużo nie porozmawiali. Dziewczynie zdarzało się stawać niepowstrzymaną siłą natury w sprawach tak błahych, że trudno ci to przełożyć na skalę losów świata. Na razie wiesz tyle, że &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;zostałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;zostałaś&quot; : &quot;zostałoś&quot; &gt;&gt; wliczony w poczet „hipokrytów z Biblioteki, którzy niczym, z wyjątkiem obłudy, nie różnią się od osłów z kampusu na Krakowskim Przedmieściu&quot;.
 
 Albert prawdopodobnie nie zamierza powiedzieć wiele więcej na temat rozmowy z podopieczną. Pozwalasz mu melancholijnie snuć wizje świata, który chciał zbudować. Spędzacie tak sporo czasu. Słyszysz o pomysłach na leki i mechanizmy, koncepcjach przemierzania przestrzeni liminalnej, a nawet szalonym pomyśle opuszczenia Warszawy. Marzenia, których miejsce jest w sercu — nie w strukturze rzeczywistości, tak wątłej, gdy każdy ma równe prawo zmieniać ją na własne potrzeby. Dyskutujecie na ten temat. Swobodnie i z dystansem, zupełnie jakby nie mijał właśnie czas, na który zaplanowano spektakl mający odmienić oblicze tej ziemi. Albert jasno zostaje przy swoim zdaniu, ale widać, że coś nie daje mu spokoju. W końcu znowu milknie, ale, o dziwo, po chwili ciszy sam pyta:
 &lt;/div&gt;
@@ -1359,7 +1362,7 @@ Odpowiadasz zgodnie ze stanem swojej wiedzy, a przyjaciel wzdycha ciężko. Nie 
 &lt;div class=&quot;avBox&quot;&gt;
 Nie masz serca dzielić się z nim teraz swoimi przypuszczeniami w tej kwestii.
 
-W końcu postanawiasz zapytać Alberta, co teraz. Czy jest szansa, żeby wasza przyjaźń wyglądała jak dawniej? On prawie wrobił cię w koniec świata, ty przekreśliłeś jego marzenia o tymże... Problem jest głębszy niż wzajemne wybaczenie tego, co się właśnie stało. Wprawdzie żaden z was nie spodziewa się dożyć następnego przełomu dekad, więc może dałoby się zachować ten dziwaczny dystans, z jakim właśnie rozmawialiście, ale to przecież nie sprawi, że problem zniknie. Nadal wasze światopoglądy będą radykalnie różne. Czy można nie się od siebie oddalać w takich warunkach?
+W końcu postanawiasz zapytać Alberta, co teraz. Czy jest szansa, żeby wasza przyjaźń wyglądała jak dawniej? On prawie wrobił cię w koniec świata, ty &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;przekreśliłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;przekreśliłaś&quot; : &quot;przekreśliłoś&quot; &gt;&gt; jego marzenia o tymże... Problem jest głębszy niż wzajemne wybaczenie tego, co się właśnie stało. Wprawdzie &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;żaden&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;żadne&quot; : &quot;żadne&quot; &gt;&gt; z was nie spodziewa się dożyć następnego przełomu dekad, więc może dałoby się zachować ten dziwaczny dystans, z jakim właśnie rozmawialiście, ale to przecież nie sprawi, że problem zniknie. Nadal wasze światopoglądy będą radykalnie różne. Czy można nie się od siebie oddalać w takich warunkach?
 &lt;/div&gt;
 
 &lt;&lt;dialog &quot;Styczen_icon&quot;&gt;&gt;
@@ -1375,13 +1378,13 @@ Styczeń patrzy ci w oczy.
 &lt;div class=&quot;avBox&quot;&gt;
 Gdy decydujesz, że pora wracać, przyjaciel odprowadza cię do drzwi wyjściowych, by następnie podjąć kolejną próbę rozmowy z Heleną.
 
-Droga powrotna mija zaskakująco spokojnie. Idziesz spać, wiedząc, że porządek — jakkolwiek chwiejny — zostaje zachowany. To rozsądna, bezpieczna opcja. Dopiero z czasem dowiesz się, czy miałeś rację. A przynajmniej taką masz nadzieję.
+Droga powrotna mija zaskakująco spokojnie. Idziesz spać, wiedząc, że porządek — jakkolwiek chwiejny — zostaje zachowany. To rozsądna, bezpieczna opcja. Dopiero z czasem dowiesz się, czy &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;miałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;miałaś&quot; : &quot;miałoś&quot; &gt;&gt; rację. A przynajmniej taką masz nadzieję.
 
 &lt;span&gt;***&lt;/span&gt;
 
 ... I tutaj się rozstajemy.
 
-Gratulacje, skończyłeś grę. 
+Gratulacje, &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;skończyłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;skończyłaś&quot; : &quot;skończyłoś&quot; &gt;&gt; grę. 
 
 &lt;&lt;link &quot;:]&quot;&gt;&gt;
     &lt;&lt;goto &quot;Credits&quot;&gt;&gt;
@@ -1389,15 +1392,15 @@ Gratulacje, skończyłeś grę.
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="betapilog" tags="" position="6500,200" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Na jasną scenę przedstawiającą pałac pod wodą wychodzi grupa aktorów grająca utopczy chór: śpiewając, świętują jakąś rocznicę. Orkiestra gra trochę nieskładnie, mimo starań dyrygenta. Po pierwszym akcie warszawskie utopce wykonują dokładny ale dość nudny grupowy taniec. Może przypomina on menueta, ale nie jesteś pewien, nigdy nie miałeś do tego głowy.
+Na jasną scenę przedstawiającą pałac pod wodą wychodzi grupa aktorów grająca utopczy chór: śpiewając, świętują jakąś rocznicę. Orkiestra gra trochę nieskładnie, mimo starań dyrygenta. Po pierwszym akcie warszawskie utopce wykonują dokładny ale dość nudny grupowy taniec. Może przypomina on menueta, ale nie jesteś &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;pewien&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;pewna&quot; : &quot;pewne&quot; &gt;&gt;, nigdy nie &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;miałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;miałaś&quot; : &quot;miałoś&quot; &gt;&gt; do tego głowy.
 
-Formalną zabawę przerywa przybycie biednej topielicy z dalekich gór. Helena sprawdza się wspaniale w tej roli. Jej śpiew, skomponowany kompletnie inaczej od poprzednich, zdaje się wytaczać własne zasady harmonii. Zaniepokojenie warszawskich utopców, spowodowane nagłym wkradnięciem się elementu niemożliwego w ich przestrzeń, udziela się również publiczności w wyniku nagłej zmiany brzmienia orkiestry. W tym czasie zauważasz delikatne zmiany w twarzach aktorów. Ich rysy przechodzą w kształt bardziej odpowiedni podwodnym istotom. Dobrze że masz tak bliskie miejsce, inaczej byś nie zauważył tego detalu w pracy charakteryzatora.
+Formalną zabawę przerywa przybycie biednej topielicy z dalekich gór. Helena sprawdza się wspaniale w tej roli. Jej śpiew, skomponowany kompletnie inaczej od poprzednich, zdaje się wytaczać własne zasady harmonii. Zaniepokojenie warszawskich utopców, spowodowane nagłym wkradnięciem się elementu niemożliwego w ich przestrzeń, udziela się również publiczności w wyniku nagłej zmiany brzmienia orkiestry. W tym czasie zauważasz delikatne zmiany w twarzach aktorów. Ich rysy przechodzą w kształt bardziej odpowiedni podwodnym istotom. Dobrze że masz tak bliskie miejsce, inaczej byś nie &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;zauważył&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;zauważyła&quot; : &quot;zauważyło&quot; &gt;&gt; tego detalu w pracy charakteryzatora.
 
 Próby ograniczenia wprowadzonego przez obecność topielicy chaosu zamykają się w wypędzeniu Heleny za bramę pałacu. Kontynuacja jej rzewnej melodii powoduje pojawienie się grupy utopców, przybyłych z odsieczą z gór i morza. Ich wtargnięcie do pałacu kończy się zręcznie ułożoną wokalną rywalizacją chóru. W czasie zwady nad aktorami zaczynają płynąć ryby, mimo twojego sokolego wzroku nie jesteś w stanie dojrzeć trzymających je żyłek lub drutów. Kiedy na dłużej do głosu dochodzą prawowici mieszkańcy pałacu, próbują wypędzić nieskładny tłum podstępem, jednak ujawnienie skrzyni z węgorzami elektrycznymi jedynie podsyca potopionych z gór. Razem z morskimi braćmi przejmują pałac a sztuka kończy się radosną arią głównej bohaterki. Jaki wspaniały głos ma ta topielica! Po jej wezwaniu do wspólnego życia w zgodzie z zmianami, kurtyna opada. 
 
 Owacje wypełniają cały gmach teatru, nawet w krześle czujesz powstałe drżenie. Z czasem rośnie, wyraźnie przerastając możliwości oklasków, zdaje się że zaraz rozsadzi cały budynek. Jednak po chwili to trzęsienie znika, a po oklaskach kurtyna z powrotem się podnosi. Wszyscy dotychczasowi śpiewacy pojawiają się razem na scenie i obejmując się bratersko, śpiewają krótkie kuplety podsumowujące znaczenie sztuki. 
 
-Trudno ci samemu zostać z myślami kiedy wychodzisz z teatru. Spoglądając w ciemną noc, wiesz że rankiem twoje rodzinne miasto nie będzie takie samo. W nowym roku dalej masz przyjaciela, ale czego właściwie byłe świadkiem? Końca? Początku? Powrotu do tego, przed czym ostrzegali akademicy? Czy to jest odwracalne? Czy jest w ogóle powód, by to odwracać? Dopiero z czasem dowiesz się, czy miałeś rację. A przynajmniej taką masz nadzieję.
+Trudno ci &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;samemu&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;samej&quot; : &quot;same&quot; &gt;&gt; zostać z myślami kiedy wychodzisz z teatru. Spoglądając w ciemną noc, wiesz że rankiem twoje rodzinne miasto nie będzie takie samo. W nowym roku dalej masz przyjaciela, ale czego właściwie &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;byłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;byłaś&quot; : &quot;byłoś&quot; &gt;&gt; świadkiem? Końca? Początku? Powrotu do tego, przed czym ostrzegali akademicy? Czy to jest odwracalne? Czy jest w ogóle powód, by to odwracać? Dopiero z czasem dowiesz się, czy &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;miałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;miałaś&quot; : &quot;miałoś&quot; &gt;&gt; rację. A przynajmniej taką masz nadzieję.
 
 I tutaj się rozstajemy...
 
@@ -1406,7 +1409,7 @@ G
 r
 atulacje
 
-skończłeś :] 
+&lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;skończyłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;skończyłaś&quot; : &quot;skończyłoś&quot; &gt;&gt; :] 
 
 &lt;&lt;link &quot;:]&quot;&gt;&gt;
     &lt;&lt;goto &quot;Credits&quot;&gt;&gt;
@@ -1414,21 +1417,21 @@ skończłeś :]
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="coś tam… dla zabawy?" tags="" position="3300,700" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-—//Lubię… Zabawę //— słyszysz, zanim coś zrzuca cię z liny. W momencie, w którym zaczynasz spadać, orientujesz się, że ciągle byłeś pod drzwiami. Ale… Czy tobie ktoś nie towarzyszył?
+—//Lubię… Zabawę //— słyszysz, zanim coś zrzuca cię z liny. W momencie, w którym zaczynasz spadać, orientujesz się, że ciągle &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;byłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;byłaś&quot; : &quot;byłoś&quot; &gt;&gt; pod drzwiami. Ale… Czy tobie ktoś nie towarzyszył?
 
 [[. . .]]
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="63" name="kierujecie się na strych" tags="" position="3100,700" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Droga na strych jest ciemna i długa. Z czasem akceptujesz skrzypienie desek pod twoimi stopami jako nieodłączną część stawiania kolejnych kroków. Powoli zaczynasz myśleć, że nie pamiętasz już, jak to jest coś widzieć… Do momentu, w którym — jesteś przekonany — dostrzegłeś ruch. Coś tu jest, oprócz ciebie. Teraz idziesz po linie. To bardzo trudne, bo nie widzisz, gdzie ona jest, a jeśli spadniesz, będziesz lecieć długo. Skąd to właściwie wiesz? Czujesz na sobie czyjś wzrok, ale musisz dalej iść po linie. Czy to ktoś, kogo znasz? Przecież by się odezwał. Może cię nie rozpoznał? To chyba gorzej. Może lepiej gdyby…
+Droga na strych jest ciemna i długa. Z czasem akceptujesz skrzypienie desek pod twoimi stopami jako nieodłączną część stawiania kolejnych kroków. Powoli zaczynasz myśleć, że nie pamiętasz już, jak to jest coś widzieć… Do momentu, w którym — jesteś &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;przekonany&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;przekonana&quot; : &quot;przekonane&quot; &gt;&gt; — &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;dostrzegłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;dostrzegłaś&quot; : &quot;dostrzegłoś&quot; &gt;&gt; ruch. Coś tu jest, oprócz ciebie. Teraz idziesz po linie. To bardzo trudne, bo nie widzisz, gdzie ona jest, a jeśli spadniesz, będziesz lecieć długo. Skąd to właściwie wiesz? Czujesz na sobie czyjś wzrok, ale musisz dalej iść po linie. Czy to ktoś, kogo znasz? Przecież by się odezwał. Może cię nie rozpoznał? To chyba gorzej. Może lepiej gdyby…
 
 Słyszysz śmiech. Nad tobą. Nad tobą rozlega się głos:
 
 — //Czego szuka? Czego chce?//
 
-Brzmi jak skrzypiące drzwi, zgrzyt paznokcia przejeżdżającego po papierze i trzask gałązki, której użyłeś na granicy.
+Brzmi jak skrzypiące drzwi, zgrzyt paznokcia przejeżdżającego po papierze i trzask gałązki, której &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;użyłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;użyłaś&quot; : &quot;użyłoś&quot; &gt;&gt; na granicy.
 
-Właśnie. Czego szukasz? Po co tu przyszedłeś?
+Właśnie. Czego szukasz? Po co tu &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;przyszedłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;przyszłaś&quot; : &quot;przyszłoś&quot; &gt;&gt;?
 
 [[Szukasz notatnika]] 
 
@@ -1438,7 +1441,7 @@ Właśnie. Czego szukasz? Po co tu przyszedłeś?
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="niszczysz notatnik" tags="" position="6300,400" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Twoja ręka samowolnie zmierza w stronę ognia kiedy Albert odwraca wzrok by spojrzeć na gwieździste niebo. Przynajmniej chciałbyś myśleć że to niezależny od ciebie ruch, niebo naprawdę jest pięknę w tę noworoczną noc. Opadające iskry przerywają wam obu swobodne oglądanie gwiazd. Niedługo zapomnisz wyrazu jego twarzy, gdy po raz pierwszy zobaczył kupkę popiołu na podłodze i zwęglony klocek w ręce. Prawda?
+Twoja ręka samowolnie zmierza w stronę ognia, kiedy Albert odwraca wzrok, by spojrzeć na gwieździste niebo. Przynajmniej &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;chciałbyś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;chciałabyś&quot; : &quot;chciałobyś&quot; &gt;&gt; myśleć że to niezależny od ciebie ruch, niebo naprawdę jest pięknę w tę noworoczną noc. Opadające iskry przerywają wam obu swobodne oglądanie gwiazd. Niedługo zapomnisz wyrazu jego twarzy, gdy po raz pierwszy zobaczył kupkę popiołu na podłodze i zwęglony klocek w ręce. Prawda?
 
 &lt;&lt;link &quot;alfapilog&quot;&gt;&gt;
     &lt;&lt;set $game.helena = true&gt;&gt;
@@ -1447,7 +1450,7 @@ Twoja ręka samowolnie zmierza w stronę ognia kiedy Albert odwraca wzrok by spo
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="oddajesz notatnik" tags="" position="6300,200" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Notatnik bez zbędnych uprzejmości przekazujesz Albertowi, przecież to normalna rzecz by oddać przyjacielowi to co jest jego. Bardzo serdecznie dziękuje ci za oddanie jego własności, chociaż i tak pewnie by w nie tak długi czas odtworzył wszystko co ma tam napisane, pomogłeś tylko trochę przyjacielowi.
+Notatnik bez zbędnych uprzejmości przekazujesz Albertowi, przecież to normalna rzecz by oddać przyjacielowi to co jest jego. Bardzo serdecznie dziękuje ci za oddanie jego własności, chociaż i tak pewnie by w nie tak długi czas odtworzył wszystko co ma tam napisane, &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;pomogłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;pomogłaś&quot; : &quot;pomogłoś&quot; &gt;&gt; tylko trochę przyjacielowi.
 
 &lt;&lt;link &quot;betapilog&quot;&gt;&gt;
     &lt;&lt;set $game.helena = true&gt;&gt;
@@ -1456,13 +1459,13 @@ Notatnik bez zbędnych uprzejmości przekazujesz Albertowi, przecież to normaln
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="66" name="przecież to proste (foton)" tags="" position="3500,750" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-Chyba to jakiś nagły błysk światła, który zrzuca cię z liny. W momencie, w którym zaczynasz spadać, orientujesz się, że ciągle byłeś pod drzwiami. Ale… Czy tobie ktoś nie towarzyszył?
+Chyba to jakiś nagły błysk światła, który zrzuca cię z liny. W momencie, w którym zaczynasz spadać, orientujesz się, że ciągle &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;byłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;byłaś&quot; : &quot;byłoś&quot; &gt;&gt; pod drzwiami. Ale… Czy tobie ktoś nie towarzyszył?
 
 [[. . .]]
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="67" name="przecież to proste (słowo)" tags="" position="3500,900" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-—// Zgadł //— dodatkowo w głosie słychać tłuczone szkło. — //Teraz jego kolej.//
+—// &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;Zgadł&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;Zgadła&quot; : &quot;Zgadło&quot; &gt;&gt; //— dodatkowo w głosie słychać tłuczone szkło. — //Teraz &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;jego&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;jej&quot; : &quot;jego&quot; &gt;&gt; kolej.//
 
 Pora wymyślić zagadkę… Może warto spróbować czegoś niekonwencjonalnego? Zwykle takie pojedynki wygrywa się, myśląc, jak nagiąć zasady. Ale jakie są zasady?
 
@@ -1474,7 +1477,7 @@ Pora wymyślić zagadkę… Może warto spróbować czegoś niekonwencjonalnego?
 &lt;/div&gt;
 &lt;&lt;/layout&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="przyszedłeś obudzić śniącego" tags="" position="3300,825" size="100,100">&lt;&lt;layout&gt;&gt;
 &lt;div class=&quot;avBox&quot;&gt;
-—// Czyli chce mnie zabić?// — Robi się chłodniej, a głos nabiera nuty czegoś metalowego brzękającego o szkło, która chyba ma oznaczać wyniosłość. —// Pozwolę mu na to. Ale tylko wtedy, gdy wygra ze mną w zagadki. Jak przegra, to zrzucę z liny. Lubię zrzucać z liny… Ja zaczynam!//
+—// Czyli chce mnie zabić?// — Robi się chłodniej, a głos nabiera nuty czegoś metalowego brzękającego o szkło, która chyba ma oznaczać wyniosłość. —// Pozwolę &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;mu&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;jej&quot; : &quot;mu&quot; &gt;&gt; na to. Ale tylko wtedy, gdy wygra ze mną w zagadki. Jak przegra, to zrzucę z liny. Lubię zrzucać z liny… Ja zaczynam!//
 
 //Nie mam kształtu,
 A nadaję go światu.
@@ -1493,9 +1496,9 @@ Wracając masz mniej widoków do oglądania, wszędzie jest ciemno. Zresztą to 
 
 Kiedy mijasz pomnik niedaleko wejścia, stary mężczyzna na cokole zdaje się ruszać. Kto w ogóle wpadł na pomysł robienia takich rzeczy z ciemnego jak nocne niebo granitu?
 
-Wchodząc do teatru uderza cię niespotykane zapełnienie głównego holu postaciami wszelkiego rodzaju. Co prawda, sądząc po zapełnieniu starych wieszaków, kiedyś widziano ich tu jeszcze więcej, ale w tej chwili wszyscy stoją w jednym miejscu czekając na przemówienie jakiejś ważnej osoby. Jest naprawdę późno ale widząc ten tłum wiesz że zdążyłeś, w ostatni dzień roku spektakl zaczyna się wyjątkowo tylko godzinę przed północą.
+Wchodząc do teatru uderza cię niespotykane zapełnienie głównego holu postaciami wszelkiego rodzaju. Co prawda, sądząc po zapełnieniu starych wieszaków, kiedyś widziano ich tu jeszcze więcej, ale w tej chwili wszyscy stoją w jednym miejscu czekając na przemówienie jakiejś ważnej osoby. Jest naprawdę późno ale widząc ten tłum wiesz że &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;zdążyłeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;zdążyłaś&quot; : &quot;zdążyłoś&quot; &gt;&gt;, w ostatni dzień roku spektakl zaczyna się wyjątkowo tylko godzinę przed północą.
 
-Przepychając się między tłumem zmierzasz do gabinetu Alberta, po raz pierwszy udaje ci się tam dostać bez przechodzenia po dwa razy każdego korytarza. Wystarczyła krótka chwila byś ujrzał znany ci napis.
+Przepychając się między tłumem zmierzasz do gabinetu Alberta, po raz pierwszy udaje ci się tam dostać bez przechodzenia po dwa razy każdego korytarza. Wystarczyła krótka chwila byś &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;ujrzał&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;ujrzała&quot; : &quot;ujrzało&quot; &gt;&gt; znany ci napis.
 
 &#39;&#39;//dr. scientiarum reconstructarum Albert A. Styczeń//&#39;&#39;
 
@@ -1507,7 +1510,7 @@ Przepychając się między tłumem zmierzasz do gabinetu Alberta, po raz pierwsz
 &lt;&lt;/dialog&gt;&gt;
 
 &lt;div class=&quot;avBox&quot;&gt;
-Dość automatycznie odpowiadasz pogodnym przywitaniem, dawno nie spotkałeś się z taką życzliwością w sklepie. Wnętrze wydaje się raczej obskurną meliną niż luksusowym sklepem w którym mógłbyś spodziewać się takiego przywitania. Oprócz właścicielki zmieściłyby się może trzy osoby, w mocnym ścisku. Na żadnej z ścian nie ma półki z jakimikolwiek produktami, każda jednak pokryta jest inną, odpadającą tapetą. Podobnie pusta jest mała lada, widzisz jednak że Basia coś pod nią trzyma. jest to raczej sposób rozwiązania ewentualnych problemów niż gotowy do wymiany towar.
+Dość automatycznie odpowiadasz pogodnym przywitaniem, dawno nie &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;spotkałeś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;spotkałaś&quot; : &quot;spotkałoś&quot; &gt;&gt; się z taką życzliwością w sklepie. Wnętrze wydaje się raczej obskurną meliną niż luksusowym sklepem w którym &lt;&lt;= State.metadata.get(&quot;pronouns&quot;) === &quot;he&quot; ? &quot;mógłbyś&quot; : State.metadata.get(&quot;pronouns&quot;) === &quot;she&quot; ? &quot;mogłabyś&quot; : &quot;mogłobyś&quot; &gt;&gt; spodziewać się takiego przywitania. Oprócz właścicielki zmieściłyby się może trzy osoby, w mocnym ścisku. Na żadnej z ścian nie ma półki z jakimikolwiek produktami, każda jednak pokryta jest inną, odpadającą tapetą. Podobnie pusta jest mała lada, widzisz jednak że Basia coś pod nią trzyma. jest to raczej sposób rozwiązania ewentualnych problemów niż gotowy do wymiany towar.
 
 [[Pytasz o notatnik]]
 &lt;/div&gt;
